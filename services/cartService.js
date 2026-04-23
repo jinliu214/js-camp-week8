@@ -24,7 +24,7 @@ async function addProductToCart(productId, quantity) {
   // 請實作此函式
   // 提示：先用 utils validateCartQuantity() 驗證數量，驗證失敗時回傳 { success: false, error: ... }
   // 驗證通過後，呼叫 addToCart() 加入購物車
-  // 使用 try/catch 處理錯誤，回傳格式：{ success: true, data: ... } / { success: false, error: ... }
+  // 回傳格式：{ success: true, data: ... } / { success: false, error: ... }
 }
 
 /**
@@ -37,7 +37,7 @@ async function updateProduct(cartId, quantity) {
   // 請實作此函式
   // 提示：先用 utils validateCartQuantity() 驗證數量，驗證失敗時回傳 { success: false, error: ... }
   // 驗證通過後，呼叫 updateCartItem() 更新數量
-  // 使用 try/catch 處理錯誤，回傳格式：{ success: true, data: ... } / { success: false, error: ... }
+  // 回傳格式：{ success: true, data: ... } / { success: false, error: ... }
 }
 
 /**
@@ -47,7 +47,7 @@ async function updateProduct(cartId, quantity) {
  */
 async function removeProduct(cartId) {
   // 請實作此函式
-  // 提示：呼叫 deleteCartItem()，使用 try/catch 處理錯誤
+  // 提示：呼叫 deleteCartItem()
   // 回傳格式：{ success: true, data: ... } / { success: false, error: ... }
 }
 
@@ -57,8 +57,8 @@ async function removeProduct(cartId) {
  */
 async function emptyCart() {
   // 請實作此函式
-  // 提示：呼叫 clearCart()，使用 try/catch 處理錯誤
-  // 回傳格式：{ success: true, data: ... } / { success: false, error: ... }
+  // 提示：呼叫 clearCart()
+  // 回傳格式：{ success: true, data: ... } 
 }
 
 /**
